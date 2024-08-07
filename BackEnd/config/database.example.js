@@ -1,10 +1,9 @@
 import { Sequelize } from "sequelize"
 
 // Option 3: Passing parameters separately (other dialects)
-const sequelize = new Sequelize('pmst_seasonfeet', 'pmst_seasonfeet', '32aada465db8f7c62ec472a75b687672210b3d43', {
-    host: 'ne8.h.filess.io',
-    dialect: 'mysql',
-    port: 3307
+const sequelize = new Sequelize('pmst', 'sa', 'tantowi@2024', {
+    host: '127.0.0.1',
+    dialect: 'postgres'
 });
 export const connection = async () => {
 
